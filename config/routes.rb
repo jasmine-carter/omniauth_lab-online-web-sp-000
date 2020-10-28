@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   get 'welcome#home' => 'welcome#home'
   match 'auth/:developer/callback', to: 'sessions#create', via: [:get, :post]
 
-  get 'sessions/delete' => 'session#delete'
+  get 'sessions/delete' => 'sessions#delete'
 end
