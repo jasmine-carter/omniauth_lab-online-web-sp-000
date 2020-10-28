@@ -20,4 +20,8 @@ class SessionsController < ApplicationController
     # Ye olde redirect
     redirect_to root_path
   end
+
+  def delete
+    session.clear
+  end
 end
